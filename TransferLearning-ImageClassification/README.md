@@ -56,11 +56,59 @@ Matplotlib 2.2.3
 
 ---
 
-### Executing
+### Execute script
 ```
 python automl-tlic.py [args]
 ```
-#### Example
+
+---
+
+### Envirorment example
+
+##### Image folder example
+```
+$cd ~/machine-learning/kaggle/blind-detection/input/aptos2019-blindness-detection/train_images/
+$ls
+image_01.png
+image_02.png
+image_03.png
+image_04.png
+image_05.png
+...
+```
+##### CSV file example
+<table>
+	<tr>
+		<th>id_code</th>
+		<th>diagnosis</th>
+	</tr>
+	<tr>
+		<td>image_01</td>
+		<td>2</td>
+	</tr>
+	<tr>
+		<td>image_02</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>image_03</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>image_04</td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>image_05</td>
+		<td>2</td>
+	</tr>
+	<tr>
+		<td>...</td>
+		<td>...</td>
+	</tr>
+</table>
+
+#### Execute example
 ```
 python automl-tlic.py \
 -output_file mymodelfile \
